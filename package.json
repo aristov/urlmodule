@@ -1,0 +1,23 @@
+{
+  "name": "sandbox",
+  "version": "0.0.0",
+  "description": "Sandbox for various ideas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aristov/sandbox.git"
+  },
+  "keywords": [
+    "Sandbox",
+    "Idea"
+  ],
+  "author": "Vyacheslav Aristov <vv.aristov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aristov/sandbox/issues"
+  },
+  "homepage": "https://github.com/aristov/sandbox#readme"
+}
