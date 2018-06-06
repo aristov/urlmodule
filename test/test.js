@@ -1,12 +1,13 @@
+import { p } from 'htmlmodule'
 import { url } from '../lib/url'
 
 const example = url({
     protocol : 'https:',
-    hostname : 'example',
-    pathname : 'test/dir/script.php',
     username : 'pupkin',
     password : 'secret',
+    hostname : 'example',
     port : '8087',
+    pathname : 'test/dir/script.php',
     searchParams : {
         foo : 'bar',
         tet : 'wiz'
@@ -14,6 +15,18 @@ const example = url({
     hash : 'heading'
 })
 
-window.example = example
+// https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit
 
-document.body.append(example)
+const recaptcha = url({
+    protocol : 'https:',
+    hostname : 'www.google.com',
+    pathname : 'recaptcha/api.js',
+    searchParams : {
+        render : 'explicit',
+        onload : `ID${ Date.now() }_onload`,
+        hl : document.body.lang
+    }
+})
+
+document.body.append(p(example.toString()).node)
+document.body.append(p(recaptcha.toString()).node)

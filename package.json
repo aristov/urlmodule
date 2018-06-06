@@ -22,6 +22,7 @@
   "homepage": "https://github.com/aristov/sandbox#readme",
   "devDependencies": {
     "esmodule": "github:aristov/esmodule",
+    "htmlmodule": "^0.5.22",
     "webpack": "^4.11.0",
     "webpack-command": "^0.2.0"
   }
