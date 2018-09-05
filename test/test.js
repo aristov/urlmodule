@@ -1,11 +1,17 @@
 import { p } from 'htmlmodule'
-import { url } from '../lib/url'
+import { URLAssembler } from '../lib/url'
 
-const example = url({
-    protocol : 'https:',
+/*================================================================*/
+
+class ExampleUrl extends URLAssembler {
+    static get url() {
+        return 'http://example'
+    }
+}
+
+const example = new ExampleUrl({
     username : 'pupkin',
     password : 'secret',
-    hostname : 'example',
     port : '8087',
     pathname : 'test/dir/script.php',
     searchParams : {
@@ -15,11 +21,17 @@ const example = url({
     hash : 'heading'
 })
 
-// https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit
+document.body.append(p(example).node)
 
-const recaptcha = url({
-    protocol : 'https:',
-    hostname : 'www.google.com',
+/*================================================================*/
+
+class GoogleUrl extends URLAssembler {
+    static get url() {
+        return 'https://www.google.com'
+    }
+}
+
+const recaptcha = new GoogleUrl({
     pathname : 'recaptcha/api.js',
     searchParams : {
         render : 'explicit',
@@ -28,5 +40,4 @@ const recaptcha = url({
     }
 })
 
-document.body.append(p(example.toString()).node)
-document.body.append(p(recaptcha.toString()).node)
+document.body.append(p(recaptcha).node)

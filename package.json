@@ -20,10 +20,12 @@
     "url": "https://github.com/aristov/sandbox/issues"
   },
   "homepage": "https://github.com/aristov/sandbox#readme",
+  "dependencies": {
+    "esmodule": "github:aristov/esmodule"
+  },
   "devDependencies": {
-    "esmodule": "github:aristov/esmodule",
-    "htmlmodule": "^0.5.22",
-    "webpack": "^4.11.0",
-    "webpack-command": "^0.2.0"
+    "htmlmodule": "github:aristov/htmlmodule",
+    "webpack": "^4.17.2",
+    "webpack-command": "^0.4.1"
   }
 }
