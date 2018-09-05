@@ -1,25 +1,45 @@
 {
-  "name": "sandbox",
-  "version": "0.0.0",
-  "description": "Sandbox for various ideas",
-  "main": "index.js",
+  "name": "urlmodule",
+  "version": "0.0.1",
+  "description": "URL assembler library",
+  "files": [
+    "lib"
+  ],
+  "main": "lib",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "watch": "webpack -w"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aristov/sandbox.git"
+    "url": "git+https://github.com/aristov/urlmodule.git"
   },
   "keywords": [
-    "Sandbox",
-    "Idea"
+    "URL",
+    "URLAssembler",
+    "url",
+    "base",
+    "href",
+    "origin",
+    "protocol",
+    "username",
+    "password",
+    "host",
+    "hostname",
+    "port",
+    "pathname",
+    "search",
+    "searchParams",
+    "hash"
   ],
   "author": "Vyacheslav Aristov <vv.aristov@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aristov/sandbox/issues"
+    "url": "https://github.com/aristov/urlmodule/issues"
   },
-  "homepage": "https://github.com/aristov/sandbox#readme",
+  "homepage": "https://github.com/aristov/urlmodule#readme",
   "dependencies": {
     "esmodule": "github:aristov/esmodule"
   },
