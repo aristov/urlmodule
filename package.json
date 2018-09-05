@@ -10,7 +10,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "publish": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
