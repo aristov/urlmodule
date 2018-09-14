@@ -1,5 +1,5 @@
 import { p } from 'htmlmodule'
-import { URLAssembler } from '../lib/url'
+import { URLAssembler } from '../lib'
 
 /*================================================================*/
 
