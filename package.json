@@ -42,10 +42,10 @@
   },
   "homepage": "https://github.com/aristov/urlmodule#readme",
   "dependencies": {
-    "esmodule": "github:aristov/esmodule"
+    "esmodule": "^0.1.1"
   },
   "devDependencies": {
-    "htmlmodule": "github:aristov/htmlmodule",
+    "htmlmodule": "^0.6.1",
     "webpack": "^4.17.2",
     "webpack-command": "^0.4.1"
   }
